@@ -1,11 +1,10 @@
-# Thực Nghiệm Overfitting Trong Hồi Quy Tuyến Tính (Linear Regression)
+# Bài Tập Dự Đoán Giá Nhà với L1 Regularization (Lasso)
 
-Dự án minh họa hiện tượng **Overfitting** khi huấn luyện mô hình Hồi quy tuyến tính bằng công thức đại số ma trận trên tập dữ liệu CSV có kích thước mẫu cực nhỏ ($N_{train} = 5$), đồng thời áp dụng **L2 Regularization (Ridge Regression)** để khắc phục.
+Dự án minh họa hiện tượng **Overfitting** khi huấn luyện mô hình Hồi quy tuyến tính trên dữ liệu diện tích nhà (`Square_Feet`) và giá nhà (`House_Price`) với kích thước tập train cực nhỏ ($N_{train} = 4$), sau đó khắc phục bằng **L1 Regularization (Lasso Regression)**.
 
-## 1. Cấu trúc dự án
+## 1. Cấu trúc thư mục
 ```text
-linear-overfitting-lab/
-├── data.csv              # Dữ liệu Doanh số game & Điểm đánh giá
-├── main.py                # Mã nguồn chính thực thi toán ma trận
-├── requirements.txt       # Danh sách thư viện
-└── README.md              # Hướng dẫn chi tiết
+house-price-lab/
+├── data.csv          # Dữ liệu diện tích & giá nhà
+├── main.py            # Mã nguồn chạy mô hình
+└── README.md          # Hướng dẫn dự án
