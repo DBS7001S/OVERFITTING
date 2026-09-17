@@ -1,28 +1,11 @@
-# Bài Tập Thực Nghiệm Overfitting & Cách Khắc Phục
+# Thực Nghiệm Overfitting Trong Hồi Quy Tuyến Tính (Linear Regression)
 
-Dự án mô phỏng hiện tượng Overfitting trong Machine Learning/Deep Learning trên tập dữ liệu hàm sóng Sin có thêm nhiễu (Noise).
+Dự án minh họa hiện tượng **Overfitting** khi huấn luyện mô hình Hồi quy tuyến tính bằng công thức đại số ma trận trên tập dữ liệu CSV có kích thước mẫu cực nhỏ ($N_{train} = 5$), đồng thời áp dụng **L2 Regularization (Ridge Regression)** để khắc phục.
 
 ## 1. Cấu trúc dự án
 ```text
-ml-overfitting-lab/
-├── data/
-│   └── generate_data.py
-├── models/
-│   ├── overfitting_net.py
-│   └── regularized_net.py
-├── utils/
-│   └── visualize.py
-├── main.py
-├── requirements.txt
-└── README.md
-```
-
-## 2. Hướng dẫn chạy
-1. Cài đặt môi trường & thư viện:
-   ```bash
-   pip install -r requirements.txt
-   ```
-2. Chạy chương trình:
-   ```bash
-   python main.py
-   ```
+linear-overfitting-lab/
+├── data.csv              # Dữ liệu Doanh số game & Điểm đánh giá
+├── main.py                # Mã nguồn chính thực thi toán ma trận
+├── requirements.txt       # Danh sách thư viện
+└── README.md              # Hướng dẫn chi tiết
